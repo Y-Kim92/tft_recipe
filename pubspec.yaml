@@ -1,0 +1,192 @@
+name: tft_recipe
+description: Item recipes and champions recommendation
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  firebase_core: ^1.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+  - assets/TFTRecipeLogo.png
+  - assets/champions/Ahri.png
+  - assets/champions/Alistar.png
+  - assets/champions/Ashe.png
+  - assets/champions/Blitzcrank.png
+  - assets/champions/Brand.png
+  - assets/champions/Braum.png
+  - assets/champions/Caitlyn.png
+  - assets/champions/Camille.png
+  - assets/champions/ChoGath.png
+  - assets/champions/Corki.png
+  - assets/champions/Darius.png
+  - assets/champions/Draven.png
+  - assets/champions/Ekko.png
+  - assets/champions/Ezreal.png
+  - assets/champions/Galio.png
+  - assets/champions/Gangplank.png
+  - assets/champions/Gnar.png
+  - assets/champions/Illaoi.png
+  - assets/champions/Irelia.png
+  - assets/champions/JarvanIV.png
+  - assets/champions/Jayce.png
+  - assets/champions/Jhin.png
+  - assets/champions/Jinx.png
+  - assets/champions/KaiSa.png
+  - assets/champions/Kassadiin.png
+  - assets/champions/Khazix.png
+  - assets/champions/Leona.png
+  - assets/champions/Lucian.png
+  - assets/champions/Lulu.png
+  - assets/champions/Malzahar.png
+  - assets/champions/MissFortune.png
+  - assets/champions/Morgana.png
+  - assets/champions/Nocturne.png
+  - assets/champions/Orianna.png
+  - assets/champions/Poppy.png
+  - assets/champions/Quinn.png
+  - assets/champions/RekSai.png
+  - assets/champions/Renata Glasc.png
+  - assets/champions/Sejuani.png
+  - assets/champions/Senna.png
+  - assets/champions/Seraphine.png
+  - assets/champions/Silco.png
+  - assets/champions/Singed.png
+  - assets/champions/Sivir.png
+  - assets/champions/Swain.png
+  - assets/champions/Syndra.png
+  - assets/champions/Tahm Kench.png
+  - assets/champions/Talon.png
+  - assets/champions/Tryndamere.png
+  - assets/champions/Twitch.png
+  - assets/champions/Veigar.png
+  - assets/champions/Vex.png
+  - assets/champions/Vi.png
+  - assets/champions/Viktor.png
+  - assets/champions/Warwick.png
+  - assets/champions/Zac.png
+  - assets/champions/Zeri.png
+  - assets/champions/Ziggs.png
+  - assets/champions/Zilean.png
+  - assets/champions/Zyra.png
+  - assets/items/Archangel's Staff.png
+  - assets/items/Banshee's Claw.png
+  - assets/items/Bloodthirster.png
+  - assets/items/Blue Buff.png
+  - assets/items/Bramble Vest.png
+  - assets/items/Chalice of Power.png
+  - assets/items/Deathblade.png
+  - assets/items/Dragon's Claw.png
+  - assets/items/Edge of Night.png
+  - assets/items/Frozen Heart.png
+  - assets/items/Gargoyle Stoneplate.png
+  - assets/items/Giant Slayer.png
+  - assets/items/Guinsoo's Rageblade.png
+  - assets/items/Hand of Justice.png
+  - assets/items/Hextech Gunblade.png
+  - assets/items/Infinity Edge.png
+  - assets/items/Ionic Spark.png
+  - assets/items/Jeweled Gauntlet.png
+  - assets/items/Last Whisper.png
+  - assets/items/Locket of the Iron Solari.png
+  - assets/items/Morellonomicon.png
+  - assets/items/Quicksilver.png
+  - assets/items/Rabadon's Deathcap.png
+  - assets/items/Rapid Firecannon.png
+  - assets/items/Redemption.png
+  - assets/items/Runaan's Hurricane.png
+  - assets/items/Shroud of Stillness.png
+  - assets/items/Spear of Shojin.png
+  - assets/items/Statikk Shiv.png
+  - assets/items/Sunfire Cape.png
+  - assets/items/Titan's Resolve.png
+  - assets/items/Warmog's Armor.png
+  - assets/items/Zeke's Herald.png
+  - assets/items/Zephyr.png
+  - assets/items/Zz'Rot Portal.png
+  - assets/ingredients/B.F. Sword.png
+  - assets/ingredients/Chain Vest.png
+  - assets/ingredients/Giant's Belt.png
+  - assets/ingredients/Needlessly Large Rod.png
+  - assets/ingredients/Negatron Cloak.png
+  - assets/ingredients/Recurve Bow.png
+  - assets/ingredients/Sparring Gloves.png
+  - assets/ingredients/Tear of the Goddess.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
